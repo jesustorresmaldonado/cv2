@@ -1,0 +1,119 @@
+body {
+       background-color: mintcream;
+
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    .cv-container {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+
+    .info-personal {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    .info-personal img {
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      object-fit: cover;
+      margin-bottom: 10px;
+    }
+
+    .section {
+      margin-bottom: 20px;
+    }
+
+    .section-titulo {
+      border-bottom: 1px solid #ccc;
+      padding-bottom: 5px;
+      margin-bottom: 10px;
+    }
+
+    .table {
+      width: 100%;
+      margin-bottom: 20px;
+    }
+
+    .table caption {
+      font-weight: bold;
+      margin-bottom: 10px;
+    }
+
+    .section-contenido ul {
+      margin-left: 20px;
+    }
+
+    footer {
+      text-align: center;
+      padding: 10px;
+      background-color: #f5f5f5;
+    }
+
+    #contact-form input[type="text"],
+    #contact-form input[type="email"],
+    #contact-form input[type="number"] {
+      width: 100%;
+      padding: 8px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      margin-bottom: 10px;
+    }
+
+    #contact-form button {
+      padding: 8px 16px;
+      background-color: #007bff;
+      color: #fff;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+
+    #data-table th {
+      cursor: pointer;
+    }
+
+.form-container {
+    border: 1px solid #ddd;
+    border-radius: 30px;
+    padding: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.mintcream-bg {
+  background-color: mintcream;
+}
+
+ /* Estilos del formulario */
+  #contact-form {
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  }
+
+  /* Estilos para los campos de entrada */
+  #contact-form input[type="text"],
+  #contact-form input[type="email"],
+  #contact-form input[type="number"] {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-bottom: 10px;
+  }
+
+  /* Estilos para el botón de enviar */
+  #contact-form button {
+    padding: 8px 16px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }

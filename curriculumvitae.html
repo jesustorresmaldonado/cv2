@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Currículum</title>
+  <!--<link rel="stylesheet" type="text/css" href="estilos.css">-->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css">
+  <script src="https://kit.fontawesome.com/327b9fcc14.js" crossorigin="anonymous"></script>
+  <body class="mintcream-bg">
+    <!--<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>-->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js"></script>
+  
+
+</head>
+<body>
+
+<section class="cv-container container">
+  <div class="info-personal d-flex flex-column justify-content-center align-items-center">
+
+    <img src="img/foto.jpg" alt="Fotografía de [Jesus Torres Maldonado]" width="200" height="200">
+    <h1>Jesus Oscar Torres Maldonado</h1>
+    <h2>Desarrollador frontend</h2>
+    <p>Tel: (011) 412-3456</p>
+    <p>Cel: (15) 12345678</p>
+    <p>Domicilio: Talcahuano 123, Buenos Aires, Argentina</p>
+    <p>Email: jotm@hotmail.com</p>
+  </div>
+
+ 
+
+  <table class="table">
+    <caption>Experiencias laborales</caption>
+    <thead>
+      <tr>
+        <th>Empresa</th>
+        <th>Puesto</th>
+        <th>Fecha</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Mexx</td>
+        <td>Técnico en reparación de PC</td>
+        <td>Enero 2015 - Diciembre 2017</td>
+      </tr>
+      <tr>
+        <td>Fender</td>
+        <td>Desarrollador Web</td>
+        <td>Marzo 2018 - Junio 2019</td>
+      </tr>
+      <tr>
+        <td>CMA</td>
+        <td>Técnico en redes</td>
+        <td>Septiembre 2013 - Diciembre 2016</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <section class="section">
+    <h2 class="section-titulo">Educación</h2>
+    <div class="section-contenido">
+      <h3>Universidad Nacional Del Oeste</h3>
+      <p>Título: Licenciatura En Informática</p>
+      <p>Título: Tecnologías web</p>
+      <p>Fecha: Marzo 2021 - Diciembre 2027</p>
+    </div>
+  </section>
+
+  <table class="table">
+    <caption>Materias aprobadas</caption>
+    <thead>
+      <tr>
+        <th>Materia</th>
+        <th>Nota</th>
+        <th>Fecha</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Tecnología aplicada</td>
+        <td>6</td>
+        <td>Febrero 2022</td>
+      </tr>
+      <tr>
+        <td>Algoritmos y estructura de datos</td>
+        <td>7</td>
+        <td>Febrero 2022</td>
+      </tr>
+      <tr>
+        <td>Arquitectura de computadores I</td>
+        <td>4</td>
+        <td>Julio 2022</td>
+      </tr>
+      <tr>
+        <td>UCYS</td>
+        <td>7</td>
+        <td>Diciembre 2022</td>
+      </tr>
+      <tr>
+        <td>Problemática regional</td>
+        <td>5</td>
+        <td>Julio 2022</td>
+      </tr>
+      <tr>
+        <td>Teoría de sistemas y organizaciones</td>
+        <td>10</td>
+        <td>Diciembre 2021</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <section class="section">
+    <h2 class="section-titulo">Habilidades</h2>
+    <div class="section-contenido">
+      <ul>
+        <li>Desarrollador de videojuegos</li>
+        <li>Programación en JavaScript</li>
+        <li>Reparación de PC y redes</li>
+        <li>Desarrollador de aplicaciones móviles híbridas</li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="section">
+    <h2 class="section-titulo">Idiomas</h2>
+    <div class="section-contenido">
+      <ul>
+        <li>Inglés 1 - Nivel Básico</li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="section">
+    <h2 class="section-titulo">Contacto</h2>
+    <div class="section-contenido">
+      <form id="contact-form" action="#" method="POST">
+        <div class="mb-3">
+          <label for="nombre" class="form-label">Nombre</label>
+          <input type="text" id="nombre" name="nombre" class="form-control" placeholder="Nombre..." required>
+        </div>
+
+        <div class="mb-3">
+          <label for="apellido" class="form-label">Apellido</label>
+          <input type="text" id="apellido" name="apellido" class="form-control" placeholder="Apellido..." required>
+        </div>
+
+        <div class="mb-3">
+          <label for="correo" class="form-label">Correo electrónico</label>
+          <input type="email" id="correo" name="correo" class="form-control" placeholder="Email..." required>
+        </div>
+
+        <div class="mb-3">
+          <label for="sueldo" class="form-label">Sueldo mínimo en pesos</label>
+          <input type="number" id="sueldo" name="sueldo" class="form-control" placeholder="Sueldo mínimo..." required>
+        </div>
+
+        <button type="submit" class="btn btn-primary">Enviar</button>
+
+      </form>
+    </div>
+  </section>
+
+  <br>
+
+  <section class="section">
+    <h2 class="section-titulo">Datos del formulario</h2>
+    <div class="section-contenido">
+      <table class="table" id="data-table">
+        <thead>
+          <tr>
+            <th onclick="sortTable(0)">Nombre</th>
+            <th onclick="sortTable(1)">Apellido</th>
+            <th onclick="sortTable(2)">Correo electrónico</th>
+            <th class="asc" onclick="ordenarTabla()">Sueldo mínimo (ARS)</th>
+            <th class="asc" onclick="sortTable(4)">Sueldo mínimo (USD)</th>
+            <th class="asc" onclick="sortTable(5)">Sueldo mínimo (EUR)</th>
+          </tr>
+        </thead>
+        <tbody></tbody>
+      </table>
+    </div>
+  </section>
+
+</section>
+
+<footer>
+  <p>© 2023 - Jesus Oscar Torres Maldonado - Todos los derechos reservados.</p>
+</footer>
+
+
+
+</body>
+ <script src="index.js" type="text/javascript"></script> 
+</html>
+
+
+  
+
